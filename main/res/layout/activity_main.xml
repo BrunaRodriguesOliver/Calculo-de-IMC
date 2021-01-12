@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtPeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textColor="@color/dark_blue"
+        android:textColorHint="@color/dark_blue"
+        android:padding="20dp"
+        android:hint="Peso"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/txtAltura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_below="@+id/txtPeso"
+        android:layout_marginEnd="30dp"
+        android:textColor="@color/dark_blue"
+        android:textColorHint="@color/dark_blue"
+        android:padding="20dp"
+        android:hint="Altura"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btnCalcula"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAltura"
+        android:backgroundTint="@color/dark_blue"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:text="Calcula IMC"/>
+
+    <ImageView
+        android:id="@+id/iconDelete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_delete"
+        android:background="@color/white"
+        android:layout_toEndOf="@+id/btnCalcula"
+        android:layout_below="@+id/txtAltura"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/mensagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dark_blue"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_below="@+id/btnCalcula"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"/>
+
+</RelativeLayout>
